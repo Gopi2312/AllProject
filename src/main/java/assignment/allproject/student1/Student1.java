@@ -2,15 +2,16 @@ package assignment.allproject.student1;
 import java.util.logging.*;
 import java.util.*;
 public class Student1{
-	final static Logger log = Logger.getLogger("hi");
+	
 	protected Student1() {
-		log.info("Welcmo to Student1");
+		
 	}
 	public static void run()
-    {
-		String name;
+        {
+	    String name;
 	    char gradelevel;
 	    float gpa;
+	    Logger log = Logger.getLogger("hi");
 	    Scanner sc = new Scanner(System.in);
 	    try {
 		    log.info("Enter Name: ");
