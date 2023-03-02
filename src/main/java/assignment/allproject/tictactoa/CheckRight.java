@@ -23,7 +23,11 @@ class CheckRight extends Check
     				flag1++;
     			}
     		}
-    		return n = winner(flag, flag1);
+    		n = winner(flag, flag1);
+    		if(n==size*size+1)
+    		{
+    			return n;
+    		}
     	}
     	return n;
     }
