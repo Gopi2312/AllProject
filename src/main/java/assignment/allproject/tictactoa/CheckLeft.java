@@ -24,7 +24,11 @@ class CheckLeft extends Check
     				flag1++;
     			}
     		}
-    		return m = winner(flag, flag1);
+    		m = winner(flag, flag1);
+    		if(m==size*size+1)
+    		{
+    			return m;
+    		}
     	}
     	return m;
     }
