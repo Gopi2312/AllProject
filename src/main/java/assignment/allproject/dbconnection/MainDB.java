@@ -51,7 +51,7 @@ public class MainDB
 	        	}
         	}catch(Exception e)
         	{
-        		e.printStackTrace();
+        		log.log(Level.INFO,()->""+e);
         		sc.nextLine();
         	}
         }
