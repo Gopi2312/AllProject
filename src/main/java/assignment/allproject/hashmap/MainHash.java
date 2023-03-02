@@ -4,12 +4,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.*;
 public class MainHash {
-	final static Logger logger = Logger.getLogger("hi");
+	
 	protected MainHash() {
-		logger.info("Welcmo to MainHash");
+		
 	}
 	public static void run()
 	{
+		Logger logger = Logger.getLogger("hi");
 		Scanner sc = new Scanner(System.in);
 		boolean b = true;
 		while(b)
