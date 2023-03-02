@@ -4,9 +4,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 public class MainCalculator 
 {
-	final static Logger logger = Logger.getLogger("hi");
 	protected MainCalculator() {
-		logger.info("Welcmo to MainCalculator");
+		
 	}
     public static void run()
     {
@@ -15,6 +14,7 @@ public class MainCalculator
     	double result;
     	int n = 0;
     	Scanner sc = new Scanner(System.in);
+	Logger logger = Logger.getLogger("hi");
     	String msg = "Enter Number";
     	logger.info(msg);
     	firstNumber = sc.nextDouble();
