@@ -5,8 +5,9 @@ class CheckRight extends Check
 	{
 		super(size,ch);
 	}
-	protected void check()
-    {
+	protected int check()
+    	{
+		int n=0;
     	for(int i=0;i<ch.length;i++) //checkrow
     	{
     		int flag = 0;
@@ -22,7 +23,8 @@ class CheckRight extends Check
     				flag1++;
     			}
     		}
-    		winner(flag, flag1);
+    		return n = winner(flag, flag1);
     	}
+    	return n;
     }
 }
