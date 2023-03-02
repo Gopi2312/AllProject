@@ -6,8 +6,9 @@ class CheckLeft extends Check
 	{
 		super(size,ch);
 	}
-	protected void check()
-    {
+	protected int check()
+    	{
+		int m =0;
     	for(int j=0;j<ch.length;j++) //checkcolumn
     	{
     		int flag = 0;
@@ -23,7 +24,9 @@ class CheckLeft extends Check
     				flag1++;
     			}
     		}
-    		winner(flag, flag1);
+    		return m = winner(flag, flag1);
     	}
+    	return m;
     }
 }   
+
