@@ -3,12 +3,13 @@ import java.util.*;
 import java.util.logging.*;
 public class MainCoordinate
 {
-	final static Logger log = Logger.getLogger("hi");
+	
 	protected MainCoordinate() {
-		log.info("Welcmo to MainCoordinate");
+		
 	}
     public static void run()
     {
+	Logger log = Logger.getLogger("hi");    
         Scanner sc = new Scanner(System.in);
         try {
         log.info("Enter Coordinate x: ");
