@@ -1,6 +1,6 @@
 package assignment.allproject.card;
 import java.util.logging.*;
-public class TestCard implements Cloneable{
+public class TestCard implements cloneable{
 	Long cardnum;
 	String cardname;
 	String exdate;
