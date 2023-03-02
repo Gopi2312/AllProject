@@ -15,7 +15,8 @@ class MainArrayList {
 	        	try {
 		            logger.info("\n1.Add \n2.Delete \n3.Display \n4.Size \n5.exit \nEnter Your Choice : ");
 		            int ch = sc.nextInt();
-		            switch (ch) {
+		            switch (ch)
+			    {
 		
 		                case 1:
 		                {
@@ -33,14 +34,16 @@ class MainArrayList {
 		                    {
 		                    	for (int i = 0; i < arrlist.size(); i++) 
 		                    	{
-		                    		if (arrlist.get(i) == del) {
+		                    		if (arrlist.get(i) == del) 
+						{
 		                                    arrlist.remove(i);
 		                                    logger.info("Element Deleted!");
 		                                    break;
 		                                }
 		                        }
 		                     } 
-		                     else {
+		                     else
+				     {
 		                            logger.info("The element you entered is not in the array");
 		                     }
 		                     break;
@@ -52,8 +55,8 @@ class MainArrayList {
 		                	{
 		                		logger.info("Empty");
 		                	}
-		                	else {
-		                		
+		                	else
+					{
 		                		logger.log(Level.INFO,()->"The element in the array are : " + arrlist);
 		                	}
 		                    break;
@@ -75,7 +78,9 @@ class MainArrayList {
 		                    break;
 		                }
 		            }
-	        	}catch(Exception e) {
+	        	}
+			catch(Exception e) 
+			{
 	        		logger.log(Level.INFO,()->""+e);
 	        		sc.nextLine();
 	        	}
