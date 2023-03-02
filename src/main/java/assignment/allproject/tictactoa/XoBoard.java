@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 class XoBoard
 {
-	Logger logger =Logger.getLogger("hi");
+    Logger logger =Logger.getLogger("hi");
     PrintStream ps = new PrintStream(new FileOutputStream(FileDescriptor.out));
     Scanner sc = new Scanner(System.in);
     Check xb;
@@ -59,15 +59,21 @@ class XoBoard
         }
         return 0;
     }
-    protected void player()
+    protected int player()
     {
+    	int siz = size * size +1;
     	xb = new CheckRight(size,ch);
-        xb.check();
+        int a = xb.check();
 		xb = new CheckLeft(size,ch);
-		xb.check();
+		int b =xb.check();
 		xb = new CheckDiagnolRight(size,ch);
-		xb.check();
+		int c = xb.check();
 		xb = new CheckDiagnolLeft(size,ch);
-		xb.check();
+		int d = xb.check();
+		if(a==siz||b==siz||c==siz||d==siz)
+		{
+			return siz;
+		}
+		return 0;
     }
 }
