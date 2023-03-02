@@ -5,7 +5,7 @@ class CheckDiagnolLeft extends Check
 	{
 		super(size,ch);
 	}
-    protected void check()
+    protected int check()
     {
     	int flag=0;
     	int flag1=0;
@@ -20,6 +20,6 @@ class CheckDiagnolLeft extends Check
     			flag1++;
     		}
     	}
-    	winner(flag, flag1);
+    	return winner(flag, flag1);
      }
 }
