@@ -5,7 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class MainArrayList {
-		protected void arrayList(){
+	protected void arrayList(){
         int limit = 0;
         ArrayList<Integer> arrlist = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
@@ -62,8 +62,9 @@ class MainArrayList {
 		                    break;
 		                }
 		                case 4:
-		                {
-		                	logger.info(""+arrlist.size());
+		                {	
+					int size = arrlist.size();
+		                	logger.log(Level.INFO,()->""+size);
 		                	break;
 		                }	
 		                case 5:
