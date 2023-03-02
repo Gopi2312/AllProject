@@ -3,23 +3,19 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class Tictactoa
 {
-	
-	protected Tictactoa() {
-		
-	}
-	public static int i;
-    public static void run()
+    public static void main( String[] args )
     {
-	Logger l = Logger.getLogger("hi");
+        Logger l = Logger.getLogger("hi");
         Scanner sc = new Scanner(System.in);
         XoBoard obj = new XoBoard();
         int position;
         int size=obj.size;
-        i=0;
+        int i=0;
+        int last = 0;
         obj.printArray();
         l.info("Player 1  x");
         l.info("Player 2  o");
-        while(i<size*size)
+        while(i<size*size && last != size*size+1)
         {
             if(i%2==0)
             {
@@ -31,7 +27,8 @@ public class Tictactoa
                 	i--;
                 }
                 obj.printArray();
-                obj.player();   
+                last = obj.player();
+                System.out.println(last);
             }
             else
             {
@@ -43,7 +40,7 @@ public class Tictactoa
                 	i--;
                 }
                 obj.printArray();
-                obj.player();
+                last = obj.player();
             }
             i++;
             if(i>=9)
