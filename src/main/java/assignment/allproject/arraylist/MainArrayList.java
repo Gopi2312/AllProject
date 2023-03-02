@@ -27,26 +27,23 @@ class MainArrayList {
 		
 		                case 2:
 		                {
-		                    if (arrlist.isEmpty()) {
-		                        logger.info(" Array empty");
-		                    } 
-		                    else {
-		                        logger.info("Enter the array element yo need  : ");
-		                        int del = sc.nextInt();
-		                        if (arrlist.contains(del)) {
-		                            for (int i = 0; i < arrlist.size(); i++) {
-		                                if (arrlist.get(i) == del) {
+		                    logger.info("Enter the array element yo need  : ");
+		                    int del = sc.nextInt();
+		                    if (arrlist.contains(del)) 
+		                    {
+		                    	for (int i = 0; i < arrlist.size(); i++) 
+		                    	{
+		                    		if (arrlist.get(i) == del) {
 		                                    arrlist.remove(i);
 		                                    logger.info("Element Deleted!");
 		                                    break;
 		                                }
-		                            }
-		                        } 
-		                        else {
-		                            logger.info("The element you entered is not in the array");
 		                        }
-		                    }
-		                    break;
+		                     } 
+		                     else {
+		                            logger.info("The element you entered is not in the array");
+		                     }
+		                     break;
 		                }
 		
 		                case 3:
