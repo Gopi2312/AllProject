@@ -4,12 +4,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 public class MainContact 
 {
-	final static Logger logger = Logger.getLogger("hi");
+	
 	protected MainContact() {
-		logger.info("Welcmo to MainContact");
+		
 	}
     public static void run()
     {
+	Logger logger = Logger.getLogger("hi");
     	Scanner sc = new Scanner(System.in);
     	LinkedList obj = new LinkedList();
 		boolean b = true;
