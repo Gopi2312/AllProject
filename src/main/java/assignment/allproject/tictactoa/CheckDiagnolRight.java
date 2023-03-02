@@ -5,7 +5,7 @@ class CheckDiagnolRight extends Check
 	{
 		super(size,ch);
 	}
-	protected void check()
+	protected int check()
 	{
     	int flag=0;
     	int flag1=0;
@@ -26,6 +26,6 @@ class CheckDiagnolRight extends Check
     			}
     		}
     	}
-    	winner(flag, flag1);
+    	return winner(flag, flag1);
     }
 }
