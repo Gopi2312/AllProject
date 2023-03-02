@@ -28,7 +28,6 @@ public class Tictactoa
                 }
                 obj.printArray();
                 last = obj.player();
-                System.out.println(last);
             }
             else
             {
