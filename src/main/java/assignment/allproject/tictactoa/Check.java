@@ -19,12 +19,12 @@ abstract class Check
 		if(flag == size)
 		{
 			logger.info(str1);
-			Tictactoa.i = 10;
+			Tictactoa.i = (size*size)+1;
 		}
 		if(flag1 == size)
 		{
 			logger.info(str2);
-			Tictactoa.i=10;
+			Tictactoa.i=(size*size)+1;
 		}
 	}
     protected abstract void check();

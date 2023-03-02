@@ -17,8 +17,8 @@ public class Treeset {
 		logger.log(Level.INFO,()->""+set);
 		int n = set.size();
 		logger.log(Level.INFO,()->"Size of a set"+n);
-		logger.log(Level.INFO,()->"Is theni in the Treeset: "+set.contains("theni"));
-		set.remove("theni");
+		logger.log(Level.INFO,()->"Is theni in the Treeset: "+set.contains("ramnad"));
+		set.remove("chennai");
 		logger.log(Level.INFO,()->""+set);	
 	}
 

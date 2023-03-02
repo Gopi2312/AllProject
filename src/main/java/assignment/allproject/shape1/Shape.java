@@ -36,10 +36,10 @@ class Shape
             logger.log(Level.INFO,()->"Perimeter of circle:" + circle);
         } else if (x == 2) {
             float rectangle = 2 * (height + width);
-            logger.log(Level.INFO,()->"Perimeter of circle:" + rectangle);
+            logger.log(Level.INFO,()->"Perimeter of rectangle:" + rectangle);
         } else if (x == 3) {
             float triangle = base + side1 + side2;
-            logger.log(Level.INFO,()->"Perimeter of circle:" + triangle);
+            logger.log(Level.INFO,()->"Perimeter of triangle:" + triangle);
         } else {
             b = false;
         }
@@ -48,14 +48,14 @@ class Shape
     protected void area() {
         if (x == 1) {
             float circle = (float) (3.14 * radius * radius);
-            logger.log(Level.INFO,()->"Perimeter of circle:" + circle);
+            logger.log(Level.INFO,()->"Area of circle:" + circle);
         } else if (x == 2) {
             float rectangle = height * width;
-            logger.log(Level.INFO,()->"Perimeter of circle:" + rectangle);
+            logger.log(Level.INFO,()->"Area of rectangle:" + rectangle);
         } else if (x == 3) {
         	try {
             float triangle = (float) (1.0 / 2.0 * (base * side1));
-            logger.log(Level.INFO,()->"Perimeter of circle:" + triangle);
+            logger.log(Level.INFO,()->"Area of triangle:" + triangle);
         	}
         	catch(Exception e)
         	{

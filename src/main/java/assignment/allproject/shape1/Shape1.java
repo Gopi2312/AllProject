@@ -2,12 +2,15 @@ package assignment.allproject.shape1;
 import java.util.logging.*;
 import java.util.*;
 public class Shape1{
+	final static Logger logger = Logger.getLogger("hi");
+	protected Shape1() {
+		logger.info("Welcmo to Shape1");
+	}
     public static void run()
     {
         int x;
         boolean b = true;
         Scanner sc = new Scanner(System.in);
-        Logger logger = Logger.getLogger("hi");
     	while (b) {
     		try {
     		Shape sp;

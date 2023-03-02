@@ -3,11 +3,14 @@ import java.io.File;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-public class MainFile 
+public class MainFile
 {
+	final static Logger logger = Logger.getLogger("hi");
+	protected MainFile() {
+		logger.info("Welcmo to MainFile");
+	}
     public static void run()
     {
-    	Logger logger = Logger.getLogger("hi");
     	StringBuilder str = new StringBuilder();
     	Map<String,Integer> map = new HashMap<>();
         try 

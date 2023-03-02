@@ -20,9 +20,9 @@ public class Hashset {
 		lset.add("chennai");
 		lset.add("madurai");
 		lset.add("paramakudi");
-		lset.add("ramnad");
+		lset.add("kamuthi");
 		lset.add("theni");
-		lset.remove("ramnad");
+		lset.remove("kamuthi");
 		logger.log(Level.INFO,()->""+lset);
 	}
 }

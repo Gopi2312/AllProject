@@ -4,13 +4,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 public class MainCalculator 
 {
+	final static Logger logger = Logger.getLogger("hi");
+	protected MainCalculator() {
+		logger.info("Welcmo to MainCalculator");
+	}
     public static void run()
     {
     	double firstNumber;
     	double secondNumber;
     	double result;
     	int n = 0;
-    	Logger logger = Logger.getLogger("hi");
     	Scanner sc = new Scanner(System.in);
     	String msg = "Enter Number";
     	logger.info(msg);

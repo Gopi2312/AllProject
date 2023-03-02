@@ -4,10 +4,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 public class MainContact 
 {
+	final static Logger logger = Logger.getLogger("hi");
+	protected MainContact() {
+		logger.info("Welcmo to MainContact");
+	}
     public static void run()
     {
     	Scanner sc = new Scanner(System.in);
-    	Logger logger = Logger.getLogger("hi");
     	LinkedList obj = new LinkedList();
 		boolean b = true;
     	try {
@@ -66,6 +69,5 @@ public class MainContact
 			logger.log(Level.INFO,()->""+e);
 			sc.nextLine();
 		}
-    	sc.close();
     }
 }

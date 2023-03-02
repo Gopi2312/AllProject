@@ -3,6 +3,10 @@ import java.util.logging.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class BankAccount{
+	final static Logger log = Logger.getLogger("hi");
+	protected BankAccount() {
+		log.info("Welcmo to BankAccount");
+	}
 	public static void run()
     {
 		String name = "";
@@ -10,7 +14,6 @@ public class BankAccount{
 	    double balance = 0.0;
 	    
 	    Scanner sc = new Scanner(System.in);
-	    Logger log = Logger.getLogger("hi");
         try {
             log.info("Enter Your Name:");
             name = sc.nextLine();

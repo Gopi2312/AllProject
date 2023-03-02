@@ -2,9 +2,11 @@ package assignment.allproject.arraylist;
 import java.util.Scanner;
 import java.util.logging.Logger;
 public class MainClass{
-
+	final static Logger logger = Logger.getLogger("hi");
+	protected MainClass() {
+		logger.info("Welcmo to MainClass");
+	}
 	public static void run() {
-		Logger logger = Logger.getLogger("hi");
 		Scanner sc = new Scanner(System.in);
 		int choice=0;
 		while(choice != 3)

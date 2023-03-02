@@ -78,7 +78,7 @@ class MainArrayList {
 		                }
 		            }
 	        	}catch(Exception e) {
-	        		e.printStackTrace();
+	        		logger.log(Level.INFO,()->""+e);
 	        		sc.nextLine();
 	        	}
 	

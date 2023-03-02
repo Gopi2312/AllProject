@@ -4,13 +4,16 @@ import java.util.logging.*;
 import java.util.Comparator;
 public class StudentTest
 {
+	final static Logger logger = Logger.getLogger("hi");
+	protected StudentTest() {
+		logger.info("Welcmo to StudentTest");
+	}
     public static void run()
     {
     	String name;
     	int age;
     	double gpa;
     	Scanner sc = new Scanner(System.in);
-        Logger logger = Logger.getLogger("hi");
     	boolean b = true;
         List<Student> arrlist = new ArrayList<Student>();
     	while(b)
@@ -63,6 +66,5 @@ public class StudentTest
         {
         	logger.info("Name: " + arrlist.get(i).getName() + " " +"GPA:"+arrlist.get(i).getGpa());
         }
-        sc.close();
     }
 }

@@ -3,10 +3,13 @@ import java.util.*;
 import java.util.logging.*;
 public class MainCard
 {
+	final static Logger log = Logger.getLogger("hi");
+	protected MainCard() {
+		log.info("Welcmo to MainCard");
+	}
     public static void run()
     {
         Scanner sc = new Scanner(System.in);
-        Logger log = Logger.getLogger("hi");
         try {
 	        log.info("Enter Card Holder Name:");
 	        String cardname = sc.nextLine();
