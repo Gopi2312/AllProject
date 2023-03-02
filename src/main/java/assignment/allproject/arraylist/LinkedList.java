@@ -3,44 +3,44 @@ package assignment.allproject.arraylist;
 import java.util.logging.Logger;
 class LinkedList{
 	Logger logger = Logger.getLogger("hio");
-    Node rootnode;
+    Node root;
     int count = 0;
     LinkedList()
     {
-    	rootnode = null;
+    	root = null;
     }
     
     void addElement(String name)
     {
     	
-            if(rootnode == null)
+            if(root == null)
             {
-                rootnode= new  Node(name);
+                root= new  Node(name);
                 count++;
             }
             else
             {
-                Node temp = rootnode;
-                while(temp.nextnode != null)
+                Node temp = root;
+                while(temp.next != null)
                 {
-                    temp = temp.nextnode;
+                    temp = temp.next;
                 }
-                temp.nextnode = new Node(name);
+                temp.next = new Node(name);
                 count++;
             }
     }
     
     void removeElement(String remname){
-    	Node temp = rootnode;
-		Node prev=rootnode;
+    	Node temp = root;
+		Node prev=root;
 		String str = "Deleted Contact Sucessfully";
 		int mark=0;
 		while(temp!=null)
 		{
-			if(remname.equals(rootnode.name))
+			if(remname.equals(root.name))
 			{
 				mark=1;
-				rootnode=temp.nextnode;
+				root=temp.next;
 				logger.info(str);
 				temp = null;
 			}
@@ -48,15 +48,15 @@ class LinkedList{
 			{
 					mark=1;
 					logger.info(str);
-					prev.nextnode=prev.nextnode.nextnode;
-					rootnode = prev;
+					prev.next=prev.next.next;
+					root = prev;
 					break;
 				
 			}
 			else
 			{
 				prev = temp;
-				temp=temp.nextnode;	
+				temp=temp.next;	
 			}
 			
 		}
@@ -70,7 +70,7 @@ class LinkedList{
    void search(String search)
     {
     	int flag = 0;
-    	Node searchnode = rootnode;
+    	Node searchnode = root;
     	while(searchnode != null)
     	{
     		if(search.equals(searchnode.name))
@@ -79,7 +79,7 @@ class LinkedList{
         		String a ="Name:"+searchnode.name;
     			logger.info(a);
     		}
-    		searchnode = searchnode.nextnode;
+    		searchnode = searchnode.next;
     	}
     	if(flag == 0)
     	{
@@ -89,7 +89,7 @@ class LinkedList{
  
     void print()
     {
-    	Node temp1 = rootnode;
+    	Node temp1 = root;
     	if(temp1 == null)
     	{
     		logger.info("Empty List");
@@ -100,10 +100,9 @@ class LinkedList{
     		{
         		String a ="Name:"+temp1.name;
     			logger.info(a);
-    			temp1 = temp1.nextnode;
+    			temp1 = temp1.next;
     		}
     		
     	}
     }
 }
-
