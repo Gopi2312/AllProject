@@ -1,6 +1,6 @@
 package assignment.allproject.coordinates;
 import java.util.logging.*;
-public class Coordinate1 implements Cloneable{
+public class Coordinate1 implements cloneable{
 	Logger log = Logger.getLogger("hi");
 	Float x;
 	Float y;
