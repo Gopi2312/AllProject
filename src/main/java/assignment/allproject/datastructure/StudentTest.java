@@ -4,12 +4,12 @@ import java.util.logging.*;
 import java.util.Comparator;
 public class StudentTest
 {
-	final static Logger logger = Logger.getLogger("hi");
 	protected StudentTest() {
-		logger.info("Welcmo to StudentTest");
+		
 	}
     public static void run()
     {
+	Logger logger = Logger.getLogger("hi");    
     	String name;
     	int age;
     	double gpa;
