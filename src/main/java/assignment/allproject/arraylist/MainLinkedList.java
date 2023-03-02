@@ -8,45 +8,45 @@ public class MainLinkedList
     {
     	Scanner sc = new Scanner(System.in);
     	Logger logger = Logger.getLogger("hi");
-    	LinkedList obj = new LinkedList();
-    	int op = 0;
+    	LinkedList object = new LinkedList();
+    	int option = 0;
     	try {
-    	while(op != 5)
+    	while(option != 5)
     	{
-    		logger.info("Choose Option:\n1.Add\n2.Remove\n3.Search\n4.Print\n5.exit");
-    		op = sc.nextInt();
-    		switch(op)
+    		logger.info("Choose Option:\n1.Add\n2.Remove\n3.Search Element\n4.Print Element\n5.exit");
+    		option = sc.nextInt();
+    		switch(option)
     		{
     			case 1:
     			{
     	    		logger.info("Enter Name:");
     	    		String name = sc.next();
-    	    		obj.addElement(name);
+    	    		object.addElement(name);
     				break;
     			}
     			case 2:
     			{
     				logger.info("Enter Name:");
-    				String remname = sc.next();
-    				obj.removeElement(remname);
+    				String removename = sc.next();
+    				object.removeElement(removename);
     				break;
     				
     			}
     			case 3:
     			{
     				logger.info("Enter Name to search::");
-    				String search = sc.next();
-    				obj.search(search);
+    				String searchele = sc.next();
+    				object.search(searchele);
     				break;
     			}
     			case 4:
     			{
-    				obj.print();
+    				object.print();
     				break;
     			}
     			case 5:
     			{
-    				op = 5;
+    				option = 5;
     				break;
     			}
     			default:
