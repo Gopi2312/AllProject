@@ -3,12 +3,13 @@ import java.util.*;
 import java.util.logging.*;
 public class MainDB
 {
-	final static Logger log = Logger.getLogger("hi");
+	
 	protected MainDB() {
-		log.info("Welcmo to  MainDB");
+		
 	}
     public static void run()
     {
+	Logger log = Logger.getLogger("hi");    
         Scanner sc = new Scanner(System.in);
         log.info("Enter DataBase URL: ");
         String database = sc.nextLine();
