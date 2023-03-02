@@ -3,13 +3,14 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class Tictactoa
 {
-	final static Logger l = Logger.getLogger("hi");
+	
 	protected Tictactoa() {
-		l.info("Welcmo to Tictactoa");
+		
 	}
 	public static int i;
     public static void run()
     {
+	Logger l = Logger.getLogger("hi");
         Scanner sc = new Scanner(System.in);
         XoBoard obj = new XoBoard();
         int position;
