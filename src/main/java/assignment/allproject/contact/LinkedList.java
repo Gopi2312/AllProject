@@ -20,12 +20,18 @@ class LinkedList{
             else
             {
                 Node temp = rootnode;
-                while(temp.nextnode != null)
-                {
-                    temp = temp.nextnode;
-                }
-                temp.nextnode = new Node(name,phone,email);
-                count++;
+                if(temp.phone != phone && temp.email != email)
+            	{
+	                while(temp.nextnode != null)
+	                {
+	                    temp = temp.nextnode;
+	                }
+	                temp.nextnode = new Node(name,phone,email);
+	                count++;
+            	}
+            	else {
+            		logger.info("Contact Already in the list");
+            	}
             }
     }
     
