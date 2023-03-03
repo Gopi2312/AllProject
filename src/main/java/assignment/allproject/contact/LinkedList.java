@@ -20,7 +20,7 @@ class LinkedList{
             else
             {
                 Node temp = rootnode;
-                if(temp.phone != phone && temp.email != email)
+                if(temp.phone != phone && !(temp.email.equals(email)))
             	{
 	                while(temp.nextnode != null)
 	                {
